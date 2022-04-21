@@ -8,8 +8,8 @@
 %----------------------------------------------------------------------------------------
 
 \name{Cat Ngo} % Your name at the top
-\address{\textsf{340 E. Foothill Blvd, Claremont CA, 91711}}
-\address{\textsf{cngo@hmc.edu} -- \textsf{424.603.1376}}
+\address{\textsf{802 E Thomas St, Unit 301, Seattle WA, 98102}}
+\address{\textsf{cathan.ngo@gmail.com} -- \textsf{424.603.1376}}
 \address{\textsf{github.com/catngo}}
 \begin{document}
 
@@ -17,62 +17,57 @@
 %   PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{EDUCATION}
-
-{\bf Harvey Mudd College} \hfill {\em Expected Graduation May 2020} \\
-{\em Joint Computer Science and Mathematics (B.S.)}\hfill {\em Major GPA 3.73} \\
-Relevant Coursework: Computer Insights, Data Structures and Program Development, Discrete Mathematics, \\Algorithms, Intermediate Lingear Algebra, Intermediate Probability, Independent Study: Intro to Statistical Learning, Machine Learning, Logic and Computability, Abstract Algebra, Real Analysis
-\end{rSection}
-
 \begin{rSection}{EXPERIENCE}
-\begin{rSubsection}{Software
-Development Engineer, Intern -- {\it Seattle, WA}}{June 2019 --- August 2019}{Remitly, Inc - Pricing Team}
 
-\item Implemented API endpoint to fetch history of pricing rules and designed the UI to reference that history, leading to greater ease-of-use and productivity for pricing analysts to set offered exchange rates
-\item Implemented dimensioned scrapers that retrieved pricing data from competitor, increasing data processing throughput by 5 times as measured by the number of queries per day
-\item Redesigned the representation of pricing quote to allow for better readabilty of the economics logic behind a quote
-\item Developed database that persisted transaction quotes and integrated it with platform codebase, allowing for after-the-fact access of the pricing quotes of enqueued transactions
-
-\end{rSubsection}
-\begin{rSubsection}{Computer Science Tutor/Grader -- {\it Claremont, CA}}{August 2017 --- Present}{Computer Science Department}
-
-\item Tutor students and grade assignments for Intro to Computer Science (Fall 2017), Computer Insight (Spring 2017),\\Data Structures (Fall 2018) and Algorithms (Fall 2019)
-\end{rSubsection}
-
-\begin{rSubsection}{Sports Data Analyst -- {\it Claremont, CA}}{August 2017 --- January 2018}{Claremont-Mudd-Scripps Mens' Basketball}
-
-\item Scraped play-by-play logs of games from 2016-2017 season of the Mens' Basketball Team
-\item Automated statistical analysis of the performance of five-player lineups in Python
-\item Applied analysis to generate practical team strategy recommendations and presented findings to Head Coach
+\begin{rSubsection}{Software Development Engineer, II  -- Remitly}{10/01/21 --- Now}{Fraud Prevention Team}{Jonah Glover, Engineering Manager (jonahg@remitly.com)}
+    
+    \item Designed and implemented an event-driven architecture (leveraging AWS SQS and Goroutine) to consume and write customer's data into our graph database (AWS Neptune) as part of a company-wide effort to decouple from reading legacy RDS instance
+    \item Implemented the user experience in Typescript and React-Native that allows customers to directly call Customer Service from our app when their transaction has been in review for longer than two hours, leading to a 13\% increase in transaction  completion rate
+    \item Implemented and released the functionality (written in PHP), allowing Customer Service agents to temporarily disable Mutli-Factor Authentication (MFA), making MFA not being permanently disabled for the customer and increasing our customer's account security and protecting them from an Account Takeover attack
 
 \end{rSubsection}
+
+\begin{rSubsection}{Software Development Engineer, I -- Remitly}{02/16/21 --- 09/30/21}{Fraud Prevention Team}{Jonah Glover, Tech Lead (jonahg@remitly.com)}
+    
+    \item Optimized a data extraction job in Scala by using a Spark custom incremental extractor, reducing the daily run time from 12 hours to less than 1 hour
+    \item Implemented Prometheus alarms to support program managers and analysts in detecing early warnings of fraudulent activity, saving an estimatd \$400k of losses in 2021
+    \item Migrated Fraud systems to Kubernetes and AWS EKS cluster, leading to cost reduction (saving an estimated \$20k per year) and better scalability of our systems as well as complying with to Security and Compliance policy 
+    \item Mentored a Software Engineer Intern and supported him in ramping up and delivering impactful project, leading to him accepting the offer to return to the team as a full-time engineer
+
+\end{rSubsection}
+
+\begin{rSubsection}{Software Development Engineer, I -- Remitly}{07/21/20 --- 02/15/21}{Customer Transaction Accounting Processing Team}{Noam Chitayat, Engineering Manager (noam.chitayat@gmail.com)}
+    
+    \item Optimized a Go worker process writing disbursement data by using a memory profiler (pprof) and reduced the runtime by 7 hours as well as making the process more resilent to failures
+    \item Implemented and wrote rigourous integration testing for the improved loss logic state machine (written in Go), which processes 24 million financial events every day to accurately identify accounting loss
+    \item Implemented functionality to emit events indicating accounting loss by integrating a Go service with existing Flink-SQS event pipieline
+    \item Documented and diagrammed the complex state machine for identiyfing accounting loss using LucidChart and hosted knowledge-sharing sessions with the team
+
+\end{rSubsection}
+
+% \begin{rSubsection}{Software Development Engineer, Summer Intern -- {\it Remitly}}{06/17/19 --- 08/30/19}{Remitly, Inc - Pricing Team}
+
+% \item Implemented API endpoint in Java to fetch history of pricing rules and designed the UI using Javascript and Node to reference that history, leading to greater ease-of-use and productivity for pricing analysts to set offered exchange rates
+% \item Implemented dimensioned scrapers in Python that retrieved pricing data from competitor, increasing data processing throughput by 5 times as measured by the number of queries per day
+% \item Redesigned the representation of pricing quote to allow for better readabilty of the economics logic behind a quote
+% \item Developed AWS RDS relational database that persisted transaction quotes and integrated it with PHP platform codebase, allowing for after-the-fact access of the pricing quotes of enqueued transactions
+
+% \end{rSubsection}
+
 \end{rSection}
 
-
-\begin{rSection}{PROJECTS}
-\begin{rSubsection}{Predicting Book Ratings with Collaborative Filtering -- {\it Python}}{April 2019 --- May 2019}{}
-
-\item Applied matrix factorization model with bias to predict users' ratings of books, using solely a dataset of books' ratings
-\item Applied grid-search to fine-tune model hyperparameters, improving training RMSE by 66\% and achieving a final validation RMSE of 3.4
-\end{rSubsection}
-\begin{rSubsection}{Chunky String Data Structure -- {\it C++}}{April 2018 --- May 2018}{}
-
-\item Implemented generic Chunky List data structure that dynamically stores arbitrary data in a linked list of arrays
-\item Wrote constant-time insert and erase functions for the data structure
-\end{rSubsection}
-
-\begin{rSubsection}{March Madness Modeling and Prediction -- {\it Python}}{March 2017}{}
-
-\item Scraped statistics from teams in the past 6 tournaments in NCAA D1 Tournament
-\item Applied genetic optimization to generate weight vectors predicting winner in head-to-head matchup with $>$60\% accuracy
-
-\end{rSubsection}
+\begin{rSection}{EDUCATION} 
+{\bf Harvey Mudd College} \hfill {\em Graduated May 2020} \\
+{\em Joint Computer Science and Mathematics (B.S.)}\hfill {\em GPA 3.835} \\
 \end{rSection}
+
 \begin{rSection}{SKILLS}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, Java, C++, SQL, JavaScript, PHP, Racket, R, HTML/CSS \\
-Software Libraries & JDBI, Lombok, Jackson, Numpy, Scikit-Learn, Surprise, React  \\
-Utilities & Forge, Jenkins, Docker, Gradle, \LaTeX, Git, Markdown
+Programming Languages & Go, Kotlin, Scala, Python, Java, C++, SQL, Typescript, JavaScript, PHP,  Haskell, \\
+& Prolog, Racket, R, HTML/CSS  \\
+Software Libraries & AWS SDK, Spark, Pprof, JDBI, Lombok, Jackson, Numpy, Scikit-Learn, React  \\
+Utilities & AWS (SQS, RDS, Dynamo, RDS, Redshift, S3, Flink), Prometheus, Jenkins, Docker, \\ 
+& Gradle, Maven, \LaTeX, Kubernetes, Git
 \end{tabular}
 \end{rSection}
 
