@@ -8,7 +8,7 @@
 %----------------------------------------------------------------------------------------
 
 \name{Cat Ngo} % Your name at the top
-\address{\textsf{1800 Boylston Avenue, Apt 304, Seattle WA, 98122}}
+\address{\textsf{6461 Telford Ave, Apt 1008, Burnaby BC, 5H 0B7}}
 \address{\textsf{cathan.ngo@gmail.com} -- \textsf{424.603.1376}}
 \address{\textsf{github.com/catngo}}
 
@@ -16,7 +16,14 @@
 
 \begin{rSection}{EXPERIENCE}
 
-    \begin{rSubsection}{Software Development Engineer, II -- Remitly}{10/01/21 -- Now}{Fraud Prevention/Remittance Risk Orchestration Team}{}
+    \begin{rSubsection}{Software Development Engineer, III -- Remitly}{10/10/24 -- Now}{Authentication and Trust Experience Team}{}
+        \item Implemented and tested Compliance data  integration when Remitly integrates with a new vendor (Hummingbird) to handle STAR and AML investigation
+        \item Conducted deep dives on legacy Risk dependencies to unblock Remitly's integration with the new Okta's Auth0 authentication flow
+        \item Designed and implemented a new workflow to handle automatic transaction cancellation and customer's notification to replace a legacy workers queue
+    \end{rSubsection}
+
+
+    \begin{rSubsection}{Software Development Engineer, II -- Remitly}{10/01/21 -- 7/23/24}{Fraud Prevention/Remittance Risk Orchestration Team}{}
         \item Designed and implemented the Enhanced Due Diligence (EDD) framework that relies on a customer’s risk rating. EDD allowed Remitly to removes the legacy Tier Limits framework that presented high friction to customers who wanted to send high volume. When rolled out, EDD increased the net send amount from customers by 6 to 8\%.
         \item Partnered with Fraud analysts to deliver necessary data to stop emergent fraud attacks.
         \item Designed and implemented an event-driven architecture (leveraging AWS SQS and Goroutine) to consume and write customer’s data into our graph database (AWS Neptune) as part of a company-wide effort to decouple from reading legacy RDS instance.
@@ -37,7 +44,7 @@
         \item Implemented functionality to emit events indicating accounting loss by integrating a Go service with existing Flink-SQS event pipeline.
         \item Documented and diagrammed the complex state machine for identifying accounting loss using LucidChart and hosted knowledge-sharing sessions with the team.
     \end{rSubsection}
-    
+    \pagebreak
     \begin{rSubsection}{Software Development Engineer, Summer Intern -- Remitly}{06/17/19 -- 08/30/19}{Pricing Team}{}
         \item Implemented API endpoint in Java to fetch history of pricing rules and designed the UI using Javascript and Node to reference that history, leading to greater ease-of-use and productivity for pricing analysts to set offered exchange rates.
         \item Implemented dimensioned scrapers in Python that retrieved pricing data from competitor, increasing data processing throughput by 5 times as measured by the number of queries per day.
@@ -45,7 +52,7 @@
         \item Developed AWS RDS relational database that persisted transaction quotes and integrated it with PHP platform codebase, allowing for after-the-fact access of the pricing quotes of enqueued transactions.
     \end{rSubsection}
 \end{rSection}
-\pagebreak
+
 \begin{rSection}{EDUCATION}
 {\bf Harvey Mudd College} \hfill {\em Graduated May 2020} \\
 {\em Joint Computer Science and Mathematics (B.S.)}\hfill {\em Major GPA 3.835} \\
